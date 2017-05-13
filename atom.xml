@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-13T08:13:39.977Z</updated>
+  <updated>2017-05-13T09:04:34.626Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图片测试</title>
+    <link href="http://yoursite.com/2017/05/13/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/"/>
+    <id>http://yoursite.com/2017/05/13/图片测试/</id>
+    <published>2017-05-13T08:59:43.000Z</published>
+    <updated>2017-05-13T09:04:34.626Z</updated>
+    
+    <content type="html"><![CDATA[<p> 上传图片测试：</p>
+<p> <img src="/2017/05/13/图片测试/test.jpg" alt="test"></p>
+<p>  参考文章来源：<a href="http://www.jianshu.com/p/c2ba9533088a" target="_blank" rel="external">http://www.jianshu.com/p/c2ba9533088a</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 上传图片测试：&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;/2017/05/13/图片测试/test.jpg&quot; alt=&quot;test&quot;&gt;&lt;/p&gt;
+&lt;p&gt;  参考文章来源：&lt;a href=&quot;http://www.jianshu.com/p/c2ba9533088a&quot; target=
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>建站日志</title>
