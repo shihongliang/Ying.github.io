@@ -272,6 +272,189 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/20/angularjs学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ying Shi">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ying">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/20/angularjs学习/" itemprop="url">angularjs学习</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-20T10:42:10+08:00">
+                2017-05-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>最近要用到angularjs和python用于web开发。花了点时间补了点angularjs，其实原理都差不多。
+主要是学习网上的菜鸟教程（http://www.runoob.com/angularjs/angularjs-tutorial.html）。
+还有angularjs权威教程
+----------------------------------------------------------
+angularjs是通过 ng-directives 扩展了 HTML。，比较重要的以下：
+ng-app 指令定义一个 AngularJS 应用程序。
+ng-model 指令把元素值（比如输入域的值）绑定到应用程序。
+ng-bind 指令把应用程序数据绑定到 HTML 视图。              
+解释：
+当网页加载完毕，AngularJS 自动开启。
+ng-app 指令告诉 AngularJS，&lt;div&gt; 元素是 AngularJS 应用程序 的&quot;所有者&quot;。
+ng-model 指令把输入域的值绑定到应用程序变量 name。
+ng-bind 指令把应用程序变量 name 绑定到某个段落的 innerHTML。
+-------------------------------------------------------------
+angularjs表达式：写在双大括号内：{{ expression }}。
+示例：
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;script src=&quot;http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js&quot;&gt;&lt;/script&gt; 
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div ng-app=&quot;&quot;&gt;
+    &lt;p&gt;我的第一个表达式： {{ 6 + 4}}&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+------------------------------------------------------------
+angularjs应用：
+angularjs 模块（Module） 定义了 AngularJS 应用。
+Angularjs 控制器（Controller） 用于控制 AngularJS 应用。
+ng-app指令定义了应用, ng-controller 定义了控制器。
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;script src=&quot;http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js&quot;&gt;&lt;/script&gt; 
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;尝试修改以下表单。&lt;/p&gt;
+
+&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;myCtrl&quot;&gt;
+
+名: &lt;input type=&quot;text&quot; ng-model=&quot;firstName&quot;&gt;&lt;br&gt;
+姓: &lt;input type=&quot;text&quot; ng-model=&quot;lastName&quot;&gt;&lt;br&gt;
+&lt;br&gt;
+姓名: {{firstName + " " + lastName}}
+
+&lt;/div&gt;
+
+&lt;script&gt;
+var app = angular.module(&apos;myApp&apos;, []);
+app.controller(&apos;myCtrl&apos;, function($scope) {
+    $scope.firstName= &quot;John&quot;;
+    $scope.lastName= &quot;Doe&quot;;
+});
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+angularjs 模块:
+    var app = angular.module(&apos;myApp&apos;, []);
+AngularJS 控制器:
+    app.controller(&apos;myCtrl&apos;, function($scope) {
+        $scope.firstName= &quot;John&quot;;
+        $scope.lastName= &quot;Doe&quot;;
+    });
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/13/图片测试/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -535,7 +718,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

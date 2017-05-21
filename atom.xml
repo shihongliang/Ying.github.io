@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-13T09:04:34.626Z</updated>
+  <updated>2017-05-21T02:06:28.753Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,98 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>angularjs学习</title>
+    <link href="http://yoursite.com/2017/05/20/angularjs%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://yoursite.com/2017/05/20/angularjs学习/</id>
+    <published>2017-05-20T02:42:10.000Z</published>
+    <updated>2017-05-21T02:06:28.753Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>最近要用到angularjs和python用于web开发。花了点时间补了点angularjs，其实原理都差不多。
+主要是学习网上的菜鸟教程（http://www.runoob.com/angularjs/angularjs-tutorial.html）。
+还有angularjs权威教程
+----------------------------------------------------------
+angularjs是通过 ng-directives 扩展了 HTML。，比较重要的以下：
+ng-app 指令定义一个 AngularJS 应用程序。
+ng-model 指令把元素值（比如输入域的值）绑定到应用程序。
+ng-bind 指令把应用程序数据绑定到 HTML 视图。              
+解释：
+当网页加载完毕，AngularJS 自动开启。
+ng-app 指令告诉 AngularJS，&lt;div&gt; 元素是 AngularJS 应用程序 的&quot;所有者&quot;。
+ng-model 指令把输入域的值绑定到应用程序变量 name。
+ng-bind 指令把应用程序变量 name 绑定到某个段落的 innerHTML。
+-------------------------------------------------------------
+angularjs表达式：写在双大括号内：{{ expression }}。
+示例：
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;script src=&quot;http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js&quot;&gt;&lt;/script&gt; 
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div ng-app=&quot;&quot;&gt;
+    &lt;p&gt;我的第一个表达式： {{ 6 + 4}}&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+------------------------------------------------------------
+angularjs应用：
+angularjs 模块（Module） 定义了 AngularJS 应用。
+Angularjs 控制器（Controller） 用于控制 AngularJS 应用。
+ng-app指令定义了应用, ng-controller 定义了控制器。
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;script src=&quot;http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js&quot;&gt;&lt;/script&gt; 
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;尝试修改以下表单。&lt;/p&gt;
+
+&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;myCtrl&quot;&gt;
+
+名: &lt;input type=&quot;text&quot; ng-model=&quot;firstName&quot;&gt;&lt;br&gt;
+姓: &lt;input type=&quot;text&quot; ng-model=&quot;lastName&quot;&gt;&lt;br&gt;
+&lt;br&gt;
+姓名: {{firstName + " " + lastName}}
+
+&lt;/div&gt;
+
+&lt;script&gt;
+var app = angular.module(&apos;myApp&apos;, []);
+app.controller(&apos;myCtrl&apos;, function($scope) {
+    $scope.firstName= &quot;John&quot;;
+    $scope.lastName= &quot;Doe&quot;;
+});
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+angularjs 模块:
+    var app = angular.module(&apos;myApp&apos;, []);
+AngularJS 控制器:
+    app.controller(&apos;myCtrl&apos;, function($scope) {
+        $scope.firstName= &quot;John&quot;;
+        $scope.lastName= &quot;Doe&quot;;
+    });
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;最近要用到angularjs和python用于web开发。花了点时间补了点angularjs，其实原理都差不多。
+主要是学习网上的菜鸟教程（http://www.runoob.com/angularjs/angularjs-tutorial.html）。
+还
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>图片测试</title>
