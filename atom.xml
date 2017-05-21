@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-21T02:34:43.706Z</updated>
+  <updated>2017-05-21T02:36:26.344Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,12 +20,12 @@
     <link href="http://yoursite.com/2017/05/20/angularjs%E5%AD%A6%E4%B9%A0/"/>
     <id>http://yoursite.com/2017/05/20/angularjs学习/</id>
     <published>2017-05-20T02:42:10.000Z</published>
-    <updated>2017-05-21T02:34:43.706Z</updated>
+    <updated>2017-05-21T02:36:26.344Z</updated>
     
     <content type="html"><![CDATA[<pre><code>最近要用到angularjs和python用于web开发。花了点时间补了点angularjs，其实原理都差不多。
 主要是学习网上的菜鸟教程（http://www.runoob.com/angularjs/angularjs-tutorial.html）。
 还有angularjs权威教程
-![angularjs](angularjs学习/angularjs.jpg)
+![](angularjs学习/angularjs.jpg)
 ----------------------------------------------------------
 angularjs是通过 ng-directives 扩展了 HTML。，比较重要的以下：
 ng-app 指令定义一个 AngularJS 应用程序。
